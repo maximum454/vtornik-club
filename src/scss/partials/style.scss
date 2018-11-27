@@ -1,0 +1,15 @@
+/*mixin*/
+@import "base/mixin";
+@import 'base/normalize';
+@import 'base/fonts';
+@import "base/class";
+
+/*blocks vendors*/
+@import "vendors/bootstrap";
+
+/*blocks dacha*/
+@import "bloks/logo";
+@import "bloks/main";
+@import "bloks/create-tournament";
+@import "bloks/new-tournament";
+

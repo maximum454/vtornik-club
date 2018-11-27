@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro Regular'), local('SourceSansPro-Regular'), url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro Light'), local('SourceSansPro-Light'), url('../fonts/SourceSansPro/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro Bold'), local('SourceSansPro-Bold'), url('../fonts/SourceSansPro/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro SemiBold'), local('SourceSansPro-SemiBold'), url('../fonts/SourceSansPro/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro Black'), local('SourceSansPro-Black'), url('../fonts/SourceSansPro/SourceSansPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+$fonts1: 'SourceSansPro', Arial, Helvetica, sans-serif;
