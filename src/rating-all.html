@@ -22,54 +22,76 @@
                 <h1>Сентябрь 2018</h1>
 
                 <div class="rating-all__control">
-                    <a href="#"><img src="img/edit.png" alt=""></a>
+                    <a href="#" class="js-edit"><img src="img/edit.png" alt=""></a>
                     <a href="#"><img src="img/close.png" alt=""></a>
                 </div>
 
             </div>
-            <table class="rating-all__table">
-                <thead>
-                <tr>
-                    <td>Игроки</td>
-                    <td>1 2 3 4</td>
-                    <td>Балл</td>
-                    <td>Разница</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1. Женя
-                        <div class="rating-all__indicator">
-                            <a class="" href="#"><img src="img/ok-2.png" alt=""></a>
-                            <a href="#"><img src="img/close.png" alt=""></a>
+            <div class="table">
+                <div class="table__header">
+                    <div>Игроки</div>
+                    <div>
+                        <a class="table__tab" href="#">1</a>
+                        <a class="table__tab" href="#">2</a>
+                        <a class="table__tab" href="#">3</a>
+                        <a class="table__tab active" href="#">4</a>
+                    </div>
+                    <div>Балл</div>
+                    <div>Разница</div>
+                </div>
+                <div class="table__contant">
+                    <div class="table__item">
+                        <div class="table__name">
+                            1. Женя
+                            <div class="table__control">
+                                <div class="table__ok"></div>
+                                <div class="table__close"></div>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        4
-                    </td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2. Артур</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>3. Максим</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>4. Бауыржан</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>4</td>
-                </tr>
-                </tbody>
-            </table>
+
+                        <input class="table__input" type="text" value="2" disabled>
+                        <div>2</div>
+                        <div>2</div>
+                    </div>
+                    <div class="table__item">
+                        <div class="table__name">
+                            2. Артур
+                            <div class="table__control">
+                                <div class="table__ok"></div>
+                                <div class="table__close"></div>
+                            </div>
+                        </div>
+                        <input class="table__input" type="text" value="3" disabled>
+                        <div>3</div>
+                        <div>3</div>
+                    </div>
+                    <div class="table__item">
+                        <div class="table__name">
+                            3. Максим
+                            <div class="table__control">
+                                <div class="table__ok active"></div>
+                                <div class="table__close"></div>
+                            </div>
+                        </div>
+                        <input class="table__input" type="text" value="4" disabled>
+                        <div>4</div>
+                        <div>4</div>
+                    </div>
+                    <div class="table__item">
+                        <div class="table__name">
+                            4. Бауыржан
+                            <div class="table__control">
+                                <div class="table__ok active"></div>
+                                <div class="table__close"></div>
+                            </div>
+                        </div>
+                        <input class="table__input" type="text" value="1" disabled>
+                        <div>1</div>
+                        <div>1</div>
+                    </div>
+                </div>
+            </div>
+
             <a href="#" class="rating-all__add"><img src="img/add.png" alt=""></a>
         </div>
     </main>

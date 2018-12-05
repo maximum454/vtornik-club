@@ -1,0 +1,128 @@
+.table{
+	&__header{
+		background-color: #fff;
+		padding: 25px 69px;
+		color: #000;
+		font-size: 24px;
+		font-weight: 600;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__tab{
+		color: #000;
+		font-size: 24px;
+		opacity: .3;
+		padding: 0 12px;
+		margin: 0 4px;
+		&.active{
+			opacity:1;
+		}
+	}
+	&__contant{
+		width: 100%;
+		padding: 0 39px;
+		margin-bottom: 40px;
+	}
+	&__item{
+		padding: 34px;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 600;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__name{
+		font-weight: 600;
+		display: flex;
+		justify-content: space-between;
+		width: 176px;
+		flex-shrink: 0;
+	}
+	&__ok{
+		position: relative;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		margin-right: 7px;
+		&.active{
+			&:before{
+				content: '';
+				position: absolute;
+				top: 13px;
+				left: 4px;
+				transform: rotate(45deg);
+				background-color: #fff;
+				width: 7px;
+				height: 1px;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: 11px;
+				left: 8px;
+				transform: rotate(-45deg);
+				background-color: #fff;
+				width: 12px;
+				height: 1px;
+			}
+		}
+
+	}
+	&__close{
+		position: relative;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 11px;
+			left: 6px;
+			transform: rotate(45deg);
+			background-color: #fff;
+			width: 12px;
+			height: 1px;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 11px;
+			left: 6px;
+			transform: rotate(-45deg);
+			background-color: #fff;
+			width: 12px;
+			height: 1px;
+		}
+	}
+	&__control{
+		display: flex;
+	}
+	input{
+		background: transparent;
+		width: 30px;
+		padding-right: 6px;
+		color:#fff;
+		text-align: right;
+		font-size: 18px;
+		font-weight: 600;
+		outline: 1px solid #fff;
+		border: none;
+	}
+	input[disabled]{
+		background: transparent;
+		border: none;
+		outline: none;
+		width: 30px;
+		padding-right: 6px;
+		color:#fff;
+		text-align: right;
+		font-size: 18px;
+		font-weight: 600;
+	}
+}

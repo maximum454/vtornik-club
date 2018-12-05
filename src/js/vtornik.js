@@ -17,5 +17,10 @@ $(function () {
 
     $('#exampleInputPhone1').mask('+0 (000) 000-00-00');
 
+    $('.js-edit').on('click', function () {
+        $('.table__input').prop('disabled', function(i, v) { return !v; });
+    });
+
+
 });
 
