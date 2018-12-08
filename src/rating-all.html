@@ -11,19 +11,19 @@
 <div class="wrp">
     <main class="main">
         <div class="main__header">
-            <a href="#">Общий рейтинг игроков</a>
+            <a href="rating.html">Общий рейтинг игроков</a>
         </div>
         <div class="rating-all">
             <div class="rating-all__header">
 
-                <a href="#" class="rating-all__icon"><img src="img/photo.png" alt=""></a>
+                <a href="#" class="rating-all__icon" data-toggle="modal" data-target="#photo"><img src="img/photo.png" alt=""></a>
 
 
                 <h1>Сентябрь 2018</h1>
 
                 <div class="rating-all__control">
                     <a href="#" class="js-edit"><img src="img/edit.png" alt=""></a>
-                    <a href="#"><img src="img/close.png" alt=""></a>
+                    <a href="#" data-toggle="modal" data-target="#deleteTournament"><img src="img/close.png" alt=""></a>
                 </div>
 
             </div>
@@ -46,49 +46,49 @@
                                 1. Женя
                                 <div class="table__control">
                                     <div class="table__ok"></div>
-                                    <div class="table__close"></div>
+                                    <div class="table__close" data-toggle="modal" data-target="#deletePlay-1"></div>
                                 </div>
                             </div>
 
                             <input class="table__input" type="text" value="2" disabled>
-                            <div>2</div>
-                            <div>2</div>
+                            <div class="table__row">2</div>
+                            <div class="table__row">2</div>
                         </div>
                         <div class="table__item">
                             <div class="table__name">
                                 2. Артур
                                 <div class="table__control">
                                     <div class="table__ok"></div>
-                                    <div class="table__close"></div>
+                                    <div class="table__close" data-toggle="modal" data-target="#deletePlay-2"></div>
                                 </div>
                             </div>
                             <input class="table__input" type="text" value="3" disabled>
-                            <div>3</div>
-                            <div>3</div>
+                            <div class="table__row">3</div>
+                            <div class="table__row">3</div>
                         </div>
                         <div class="table__item">
                             <div class="table__name">
                                 3. Максим
                                 <div class="table__control">
                                     <div class="table__ok active"></div>
-                                    <div class="table__close"></div>
+                                    <div class="table__close" data-toggle="modal" data-target="#deletePlay-3"></div>
                                 </div>
                             </div>
                             <input class="table__input" type="text" value="4" disabled>
-                            <div>4</div>
-                            <div>4</div>
+                            <div class="table__row">4</div>
+                            <div class="table__row">4</div>
                         </div>
                         <div class="table__item">
                             <div class="table__name">
                                 4. Бауыржан
                                 <div class="table__control">
                                     <div class="table__ok active"></div>
-                                    <div class="table__close"></div>
+                                    <div class="table__close" data-toggle="modal" data-target="#deletePlay-4"></div>
                                 </div>
                             </div>
                             <input class="table__input" type="text" value="1" disabled>
-                            <div>1</div>
-                            <div>1</div>
+                            <div class="table__row">1</div>
+                            <div class="table__row">1</div>
                         </div>
                     </div>
                     <div class="tab">
@@ -249,6 +249,105 @@
             </div>
 
             <a href="#" class="rating-all__add"><img src="img/add.png" alt=""></a>
+
+            <!-- Удалить турнир -->
+            <div class="modal fade" id="photo" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <form class="rating-all__form" action="">
+                                <button type="submit" class="rating-all__button">Загрузить из галереи</button>
+                                <button type="button" class="rating-all__button">Сделать фото</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Удалить турнир -->
+            <div class="modal fade" id="deleteTournament" tabindex="-1" role="dialog" aria-labelledby="deleteTournamentLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="deleteTournamentLabel">Вы уверены,<br> что хотите удалить турнир?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="rating-all__form" action="">
+                                <button type="submit" class="rating-all__button">Да</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Удалить игрока -->
+            <div class="modal fade" id="deletePlay-1" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="deletePlayLabel">Вы уверены,<br> что хотите удалить игрока?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="rating-all__form" action="">
+                                <button type="submit" class="rating-all__button">Да</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Удалить игрока -->
+            <div class="modal fade" id="deletePlay-2" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="deletePlayLabel">Вы уверены,<br> что хотите удалить игрока?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="rating-all__form" action="">
+                                <button type="submit" class="rating-all__button">Да</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Удалить игрока -->
+            <div class="modal fade" id="deletePlay-3" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="deletePlayLabel">Вы уверены,<br> что хотите удалить игрока?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="rating-all__form" action="">
+                                <button type="submit" class="rating-all__button">Да</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Удалить игрока -->
+            <div class="modal fade" id="deletePlay-4" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="deletePlayLabel">Вы уверены,<br> что хотите удалить игрока?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="rating-all__form" action="">
+                                <button type="submit" class="rating-all__button">Да</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </div>

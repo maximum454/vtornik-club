@@ -1,19 +1,20 @@
 .tournament {
 	width: 100%;
-	max-width: 570px;
+	max-width: 600px;
+	padding: 0 15px;
 	margin: 0 auto;
 	&__btn{
 		position: relative;
-		display: block;
+		display: flex;
+		align-items: center;
 		text-decoration: none;
 		background-color: #a2d868;
 		width: 100%;
-		height: 100px;
+		min-height: 100px;
 		margin-bottom: 25px;
 		padding: 0 30px;
 		color: #fff;
 		font-size: 36px;
-		line-height: 100px;
 		font-weight: bold;
 		text-align: left;
 		&:after{
@@ -30,6 +31,13 @@
 		&:hover{
 			color: #fff;
 			text-decoration: none;
+		}
+		&.ok{
+			text-align: center;
+			justify-content: center;
+			&:after{
+				display: none;
+			}
 		}
 	}
 	&__list{
@@ -78,6 +86,73 @@
 					height: 27px;
 				}
 			}
+		}
+	}
+	&__form{
+		text-align: center;
+	}
+	&__input{
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+		border: 0;
+		border-bottom: 3px solid #979797;
+		outline: none;
+		&:focus{
+
+		}
+	}
+	&__submit{
+		position: relative;
+		background-color: #a2d868;
+		padding: 0 30px;
+		color: #fff;
+		font-size: 36px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.modal{
+		.modal-dialog{
+			max-width: 570px;
+		}
+		.modal-content{
+			border-radius: 0;
+			padding: 0 30px;
+		}
+		.close{
+			position: absolute;
+			top: 27px;
+			right: 33px;
+			opacity:1;
+			outline: none;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 14px;
+				left: 3px;
+				transform: rotate(45deg);
+				background-color: #000;
+				width: 25px;
+				height: 2px;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: 14px;
+				left: 3px;
+				transform: rotate(-45deg);
+				background-color: #000;
+				width: 25px;
+				height: 2px;
+			}
+		}
+		.modal-header{
+			justify-content: center;
+			border-bottom: 0;
+		}
+		.modal-title{
+			font-weight: bold;
 		}
 	}
 }

@@ -3,11 +3,6 @@
 //= partials/popper.min.js
 //= partials/jquery.mask.min.js
 $(function () {
-    /*link*/
-    $("a[href='#']").click(function () {
-        return false;
-    });
-
     $("#menu").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
@@ -56,5 +51,14 @@ $(function () {
         return this.each(createTabs);
     };
     $(".tabs").lightTabs();
+
+    $('.js-tournament').on('click', function () {
+       $(this).toggleClass('ok');
+    });
 });
+
+var main= document.getElementById("main").clientHeight-150;
+var newTournament= document.getElementById("new-tournament");
+
+newTournament.style.height = main+"px";
 

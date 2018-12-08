@@ -16,15 +16,34 @@
         <h1 class="main__title">Общий список игроков</h1>
         <div class="tournament">
 
-            <a href="#" class="tournament__btn">Добавить нового игрока</a>
+            <a href="#" class="tournament__btn" data-toggle="modal" data-target="#myModal">Добавить нового игрока</a>
             <ul class="tournament__list">
-                <li><a href="#" class="ok">Женя</a></li>
-                <li><a href="#">Артур</a></li>
-                <li><a href="#" class="ok">Максим</a></li>
-                <li><a href="#">Анна</a></li>
-                <li><a href="#" class="ok">Бауржан</a></li>
-                <li><a href="#">Алия</a></li>
+                <li><a href="#" class="ok js-tournament">Женя</a></li>
+                <li><a href="#" class=" js-tournament">Артур</a></li>
+                <li><a href="#" class="ok js-tournament">Максим</a></li>
+                <li><a href="#" class=" js-tournament">Анна</a></li>
+                <li><a href="#" class="ok js-tournament">Бауржан</a></li>
+                <li><a href="#" class="js-tournament">Алия</a></li>
             </ul>
+            <a href="#" class="tournament__btn ok">ОК</a>
+
+            <!-- Добавить нового игрока -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                            <h4 class="modal-title" id="myModalLabel">Введите имя игрока</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="tournament__form" action="">
+                                <input class="tournament__input" type="text">
+                                <input class="tournament__submit" type="submit" value="Ok">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </div>
