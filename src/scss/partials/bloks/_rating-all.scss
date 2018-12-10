@@ -72,15 +72,36 @@
 		padding: 0 30px;
 		color: #000;
 		font-size: 21px;
-		font-weight: bold;
+		font-weight: normal;
 		text-align: center;
 		border: none;
 		border-right: 3px solid #979797;
 		&:last-child{
 			border-right: 0;
 		}
+		.img{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 137px;
+			margin-bottom: 40px;
+			img{
+			}
+		}
 	}
 	.modal{
+		&.photo{
+			width: 100%;
+			.modal-dialog{
+				width: 100%;
+				max-width: 100%;
+				position: absolute;
+				bottom: 0;
+			}
+			.modal-content{
+				padding: 30px;
+			}
+		}
 		.modal-dialog{
 			max-width: 570px;
 		}

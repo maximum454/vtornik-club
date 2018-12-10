@@ -250,14 +250,18 @@
 
             <a href="#" class="rating-all__add"><img src="img/add.png" alt=""></a>
 
-            <!-- Удалить турнир -->
-            <div class="modal fade" id="photo" tabindex="-1" role="dialog" aria-hidden="true">
+            <!-- Добавить фото -->
+            <div class="modal photo fade" id="photo" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
                             <form class="rating-all__form" action="">
-                                <button type="submit" class="rating-all__button">Загрузить из галереи</button>
-                                <button type="button" class="rating-all__button">Сделать фото</button>
+                                <button type="submit" class="rating-all__button">
+                                    <div class="img"><img src="img/gallery.png" alt=""></div>
+                                    Загрузить из галереи</button>
+                                <button type="button" class="rating-all__button">
+                                    <div class="img"><img src="img/photo-black.png" alt=""></div>
+                                    Сделать фото</button>
                             </form>
                         </div>
                     </div>
