@@ -2,9 +2,29 @@
 	box-sizing: border-box;
 }
 html, body{
-	height: 100%;
-	font-family: $fonts1;
+	font-family: 'Source Sans Pro', sans-serif;
 
+}
+body {
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url("../img/body-background.png");
+		width: 114px;
+		height: 100%;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-image: url("../img/body-background.png");
+		width: 114px;
+		height: 100%;
+	}
 }
 .hidden{
 	display: none;

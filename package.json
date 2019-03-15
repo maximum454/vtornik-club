@@ -32,7 +32,8 @@
     "gulp-watch": "^4.3.11",
     "imagemin-pngquant": "^6.0.0",
     "masonry-layout": "4.2.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "undertaker": "^1.2.0"
   },
   "dependencies": {
     "cssmin": "^0.4.3",
