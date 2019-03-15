@@ -10,245 +10,345 @@
 <body>
 <div class="wrp">
     <main class="main">
-        <div class="main__header">
-            <a href="rating.html">Общий рейтинг игроков</a>
-        </div>
         <div class="rating-all">
-            <div class="rating-all__header">
+            <div class="container">
+                <a href="#" class="alert alert-light w-100 d-block text-center">Выйти из режима администратора</a>
+                <div class="rating-all__header">
+                    <div>
+                        <a href="#" class="mr-4"><img
+                                src="img/back.png" alt=""></a>
+                        <a href="#" data-toggle="modal" data-target="#photo"><img
+                                src="img/photo.png" alt=""></a>
+                    </div>
 
-                <a href="#" class="rating-all__icon" data-toggle="modal" data-target="#photo"><img src="img/photo.png" alt=""></a>
+                    <h1>Сентябрь 2018</h1>
 
+                    <div class="rating-all__control">
+                        <a href="#" class="js-edit"><img src="img/edit.png" alt=""></a>
+                        <a href="#" class="ml-4" data-toggle="modal" data-target="#deleteTournament"><img src="img/close.png" alt=""></a>
+                    </div>
 
-                <h1>Сентябрь 2018</h1>
-
-                <div class="rating-all__control">
-                    <a href="#" class="js-edit"><img src="img/edit.png" alt=""></a>
-                    <a href="#" data-toggle="modal" data-target="#deleteTournament"><img src="img/close.png" alt=""></a>
                 </div>
+                <div class="table tabs d-none">
+                    <div class="table__header">
+                        <div>Игроки</div>
+                        <ul class="table__list">
+                            <li class="table__tab active">1</li>
+                            <li class="table__tab">2</li>
+                            <li class="table__tab">3</li>
+                            <li class="table__tab">4</li>
+                        </ul>
+                        <div>Балл</div>
+                        <div>Разница</div>
+                    </div>
+                    <div class="table__contant">
+                        <div class="tab">
+                            <div class="table__item">
+                                <div class="table__name">
+                                    1. Женя
+                                    <div class="table__control">
+                                        <div class="table__ok"></div>
+                                        <div class="table__close" data-toggle="modal" data-target="#deletePlay-1"></div>
+                                    </div>
+                                </div>
 
+                                <input class="table__input" type="text" value="2" disabled>
+                                <div class="table__row">2</div>
+                                <div class="table__row">2</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    2. Артур
+                                    <div class="table__control">
+                                        <div class="table__ok"></div>
+                                        <div class="table__close" data-toggle="modal" data-target="#deletePlay-2"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="3" disabled>
+                                <div class="table__row">3</div>
+                                <div class="table__row">3</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    3. Максим
+                                    <div class="table__control">
+                                        <div class="table__ok active"></div>
+                                        <div class="table__close" data-toggle="modal" data-target="#deletePlay-3"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="4" disabled>
+                                <div class="table__row">4</div>
+                                <div class="table__row">4</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    4. Бауыржан
+                                    <div class="table__control">
+                                        <div class="table__ok active"></div>
+                                        <div class="table__close" data-toggle="modal" data-target="#deletePlay-4"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="1" disabled>
+                                <div class="table__row">1</div>
+                                <div class="table__row">1</div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="table__item">
+                                <div class="table__name">
+                                    2. Артур
+                                    <div class="table__control">
+                                        <div class="table__ok"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="3" disabled>
+                                <div>3</div>
+                                <div>3</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    1. Женя
+                                    <div class="table__control">
+                                        <div class="table__ok"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+
+                                <input class="table__input" type="text" value="2" disabled>
+                                <div>2</div>
+                                <div>2</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    3. Максим
+                                    <div class="table__control">
+                                        <div class="table__ok active"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="4" disabled>
+                                <div>4</div>
+                                <div>4</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    4. Бауыржан
+                                    <div class="table__control">
+                                        <div class="table__ok active"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="1" disabled>
+                                <div>1</div>
+                                <div>1</div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="table__item">
+                                <div class="table__name">
+                                    3. Максим
+                                    <div class="table__control">
+                                        <div class="table__ok active"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="4" disabled>
+                                <div>4</div>
+                                <div>4</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    1. Женя
+                                    <div class="table__control">
+                                        <div class="table__ok"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+
+                                <input class="table__input" type="text" value="2" disabled>
+                                <div>2</div>
+                                <div>2</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    2. Артур
+                                    <div class="table__control">
+                                        <div class="table__ok"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="3" disabled>
+                                <div>3</div>
+                                <div>3</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    4. Бауыржан
+                                    <div class="table__control">
+                                        <div class="table__ok active"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="1" disabled>
+                                <div>1</div>
+                                <div>1</div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="table__item">
+                                <div class="table__name">
+                                    4. Бауыржан
+                                    <div class="table__control">
+                                        <div class="table__ok active"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="1" disabled>
+                                <div>1</div>
+                                <div>1</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    1. Женя
+                                    <div class="table__control">
+                                        <div class="table__ok"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+
+                                <input class="table__input" type="text" value="2" disabled>
+                                <div>2</div>
+                                <div>2</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    2. Артур
+                                    <div class="table__control">
+                                        <div class="table__ok"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="3" disabled>
+                                <div>3</div>
+                                <div>3</div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__name">
+                                    3. Максим
+                                    <div class="table__control">
+                                        <div class="table__ok active"></div>
+                                        <div class="table__close"></div>
+                                    </div>
+                                </div>
+                                <input class="table__input" type="text" value="4" disabled>
+                                <div>4</div>
+                                <div>4</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-bordered text-center mb-4">
+                    <thead>
+                    <tr>
+                        <th scope="col">Игроки</th>
+                        <th scope="col">1</th>
+                        <th scope="col">2</th>
+                        <th scope="col">3</th>
+                        <th scope="col">4</th>
+                        <th scope="col">5</th>
+                        <th scope="col"></th>
+                        <th scope="col">Балл</th>
+                        <th scope="col">Разница</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1. Женя
+                            <div class="table__control">
+                                <div class="table__ok"></div>
+                                <div class="table__close" data-toggle="modal" data-target="#deletePlay-1"></div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>2:1</td>
+                        <td>2:4</td>
+                        <td>2:3</td>
+                        <td>1:2</td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>2. Артур
+                            <div class="table__control">
+                                <div class="table__ok"></div>
+                                <div class="table__close" data-toggle="modal" data-target="#deletePlay-1"></div>
+                            </div>
+                        </td>
+                        <td>1:2</td>
+                        <td></td>
+                        <td>3:1</td>
+                        <td>2:3</td>
+                        <td>1:3</td>
+                        <td></td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3. Максим
+                            <div class="table__control">
+                                <div class="table__ok active"></div>
+                                <div class="table__close" data-toggle="modal" data-target="#deletePlay-1"></div>
+                            </div>
+                        </td>
+                        <td>1:2</td>
+                        <td>3:1</td>
+                        <td></td>
+                        <td>2:3</td>
+                        <td>1:3</td>
+                        <td></td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>4. Бауржан
+                            <div class="table__control">
+                                <div class="table__ok active"></div>
+                                <div class="table__close" data-toggle="modal" data-target="#deletePlay-1"></div>
+                            </div>
+                        </td>
+                        <td>1:2</td>
+                        <td>3:1</td>
+                        <td>3:1</td>
+                        <td></td>
+                        <td>1:3</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>5. Аня
+                            <div class="table__control">
+                                <div class="table__ok active"></div>
+                                <div class="table__close" data-toggle="modal" data-target="#deletePlay-1"></div>
+                            </div>
+                        </td>
+                        <td>1:2</td>
+                        <td></td>
+                        <td>3:1</td>
+                        <td>2:3</td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#" class="btn btn-dark">+ Новый игрок</a>
             </div>
-            <div class="table tabs">
-                <div class="table__header">
-                    <div>Игроки</div>
-                    <ul class="table__list">
-                        <li class="table__tab active">1</li>
-                        <li class="table__tab">2</li>
-                        <li class="table__tab">3</li>
-                        <li class="table__tab">4</li>
-                    </ul>
-                    <div>Балл</div>
-                    <div>Разница</div>
-                </div>
-                <div class="table__contant">
-                    <div class="tab">
-                        <div class="table__item">
-                            <div class="table__name">
-                                1. Женя
-                                <div class="table__control">
-                                    <div class="table__ok"></div>
-                                    <div class="table__close" data-toggle="modal" data-target="#deletePlay-1"></div>
-                                </div>
-                            </div>
 
-                            <input class="table__input" type="text" value="2" disabled>
-                            <div class="table__row">2</div>
-                            <div class="table__row">2</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                2. Артур
-                                <div class="table__control">
-                                    <div class="table__ok"></div>
-                                    <div class="table__close" data-toggle="modal" data-target="#deletePlay-2"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="3" disabled>
-                            <div class="table__row">3</div>
-                            <div class="table__row">3</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                3. Максим
-                                <div class="table__control">
-                                    <div class="table__ok active"></div>
-                                    <div class="table__close" data-toggle="modal" data-target="#deletePlay-3"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="4" disabled>
-                            <div class="table__row">4</div>
-                            <div class="table__row">4</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                4. Бауыржан
-                                <div class="table__control">
-                                    <div class="table__ok active"></div>
-                                    <div class="table__close" data-toggle="modal" data-target="#deletePlay-4"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="1" disabled>
-                            <div class="table__row">1</div>
-                            <div class="table__row">1</div>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <div class="table__item">
-                            <div class="table__name">
-                                2. Артур
-                                <div class="table__control">
-                                    <div class="table__ok"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="3" disabled>
-                            <div>3</div>
-                            <div>3</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                1. Женя
-                                <div class="table__control">
-                                    <div class="table__ok"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-
-                            <input class="table__input" type="text" value="2" disabled>
-                            <div>2</div>
-                            <div>2</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                3. Максим
-                                <div class="table__control">
-                                    <div class="table__ok active"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="4" disabled>
-                            <div>4</div>
-                            <div>4</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                4. Бауыржан
-                                <div class="table__control">
-                                    <div class="table__ok active"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="1" disabled>
-                            <div>1</div>
-                            <div>1</div>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <div class="table__item">
-                            <div class="table__name">
-                                3. Максим
-                                <div class="table__control">
-                                    <div class="table__ok active"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="4" disabled>
-                            <div>4</div>
-                            <div>4</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                1. Женя
-                                <div class="table__control">
-                                    <div class="table__ok"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-
-                            <input class="table__input" type="text" value="2" disabled>
-                            <div>2</div>
-                            <div>2</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                2. Артур
-                                <div class="table__control">
-                                    <div class="table__ok"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="3" disabled>
-                            <div>3</div>
-                            <div>3</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                4. Бауыржан
-                                <div class="table__control">
-                                    <div class="table__ok active"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="1" disabled>
-                            <div>1</div>
-                            <div>1</div>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <div class="table__item">
-                            <div class="table__name">
-                                4. Бауыржан
-                                <div class="table__control">
-                                    <div class="table__ok active"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="1" disabled>
-                            <div>1</div>
-                            <div>1</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                1. Женя
-                                <div class="table__control">
-                                    <div class="table__ok"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-
-                            <input class="table__input" type="text" value="2" disabled>
-                            <div>2</div>
-                            <div>2</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                2. Артур
-                                <div class="table__control">
-                                    <div class="table__ok"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="3" disabled>
-                            <div>3</div>
-                            <div>3</div>
-                        </div>
-                        <div class="table__item">
-                            <div class="table__name">
-                                3. Максим
-                                <div class="table__control">
-                                    <div class="table__ok active"></div>
-                                    <div class="table__close"></div>
-                                </div>
-                            </div>
-                            <input class="table__input" type="text" value="4" disabled>
-                            <div>4</div>
-                            <div>4</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="rating-all__add"><img src="img/add.png" alt=""></a>
 
             <!-- Добавить фото -->
             <div class="modal photo fade" id="photo" tabindex="-1" role="dialog" aria-hidden="true">
@@ -258,10 +358,12 @@
                             <form class="rating-all__form" action="">
                                 <button type="submit" class="rating-all__button">
                                     <div class="img"><img src="img/gallery.png" alt=""></div>
-                                    Загрузить из галереи</button>
+                                    Загрузить из галереи
+                                </button>
                                 <button type="button" class="rating-all__button">
                                     <div class="img"><img src="img/photo-black.png" alt=""></div>
-                                    Сделать фото</button>
+                                    Сделать фото
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -269,16 +371,20 @@
             </div>
 
             <!-- Удалить турнир -->
-            <div class="modal fade" id="deleteTournament" tabindex="-1" role="dialog" aria-labelledby="deleteTournamentLabel" aria-hidden="true">
+            <div class="modal fade" id="deleteTournament" tabindex="-1" role="dialog"
+                 aria-labelledby="deleteTournamentLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="deleteTournamentLabel">Вы уверены,<br> что хотите удалить турнир?</h4>
+                            <h4 class="modal-title" id="deleteTournamentLabel">Вы уверены,<br> что хотите удалить
+                                турнир?</h4>
                         </div>
                         <div class="modal-body">
                             <form class="rating-all__form" action="">
                                 <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal"
+                                        aria-label="Close">Нет
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -286,7 +392,8 @@
             </div>
 
             <!-- Удалить игрока -->
-            <div class="modal fade" id="deletePlay-1" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel" aria-hidden="true">
+            <div class="modal fade" id="deletePlay-1" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -295,7 +402,9 @@
                         <div class="modal-body">
                             <form class="rating-all__form" action="">
                                 <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal"
+                                        aria-label="Close">Нет
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -303,7 +412,8 @@
             </div>
 
             <!-- Удалить игрока -->
-            <div class="modal fade" id="deletePlay-2" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel" aria-hidden="true">
+            <div class="modal fade" id="deletePlay-2" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -312,7 +422,9 @@
                         <div class="modal-body">
                             <form class="rating-all__form" action="">
                                 <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal"
+                                        aria-label="Close">Нет
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -320,7 +432,8 @@
             </div>
 
             <!-- Удалить игрока -->
-            <div class="modal fade" id="deletePlay-3" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel" aria-hidden="true">
+            <div class="modal fade" id="deletePlay-3" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -329,7 +442,9 @@
                         <div class="modal-body">
                             <form class="rating-all__form" action="">
                                 <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal"
+                                        aria-label="Close">Нет
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -337,7 +452,8 @@
             </div>
 
             <!-- Удалить игрока -->
-            <div class="modal fade" id="deletePlay-4" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel" aria-hidden="true">
+            <div class="modal fade" id="deletePlay-4" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -346,7 +462,9 @@
                         <div class="modal-body">
                             <form class="rating-all__form" action="">
                                 <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal" aria-label="Close">Нет</button>
+                                <button type="button" class="rating-all__button" data-dismiss="modal"
+                                        aria-label="Close">Нет
+                                </button>
                             </form>
                         </div>
                     </div>

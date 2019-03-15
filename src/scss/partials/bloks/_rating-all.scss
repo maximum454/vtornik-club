@@ -4,6 +4,9 @@
 	height: 100%;
 	margin: 0 auto;
 	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		position: relative;
 		color: #fff;
 		font-size: 48px;
@@ -14,18 +17,6 @@
 			font-size: 48px;
 			font-weight: 600;
 		}
-	}
-	&__icon {
-		position: absolute;
-		top: 50%;
-		left: 50px;
-		transform: translate(0, -50%);
-	}
-	&__control {
-		position: absolute;
-		top: 50%;
-		right: 50px;
-		transform: translate(0, -50%);
 	}
 	&__table {
 		width: 100%;
@@ -88,6 +79,39 @@
 			img{
 			}
 		}
+	}
+	.table{
+		width: 100%;
+	}
+	thead{
+		background-color: #fff;
+		th{
+			color: #000;
+			font-size: 24px;
+			font-weight: 600;
+			padding: 15px;
+		}
+	}
+	tbody{
+		td{
+			min-width: 56px;
+			color: #fff;
+			font-size: 24px;
+			font-weight: 600;
+			padding: 15px;
+		}
+	}
+	.table-bordered th{
+		border: none;
+	}
+	.table-bordered,
+	.table-bordered td{
+		border: 1px solid rgba(#fff,.1);
+		border-bottom: 2px solid #fff;
+	}
+	.btn{
+		font-size: 30px;
+		padding: 0 20px;
 	}
 	.modal{
 		&.photo{
