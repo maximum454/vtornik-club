@@ -1,10 +1,10 @@
+/*blocks vendors*/
+@import "vendors/bootstrap";
+
 /*mixin*/
 @import "base/mixin";
 @import 'base/normalize';
 @import "base/class";
-
-/*blocks vendors*/
-@import "vendors/bootstrap";
 
 /*blocks dacha*/
 @import "bloks/logo";
@@ -16,4 +16,5 @@
 @import "bloks/rating-all";
 @import "bloks/photo";
 @import "bloks/table";
+@import "bloks/login";
 
