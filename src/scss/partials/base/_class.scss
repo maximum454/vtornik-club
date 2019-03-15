@@ -40,6 +40,11 @@ body {
 		background-color: #92c35d;
 	}
 }
+.btn-dark.disabled, .btn-dark:disabled {
+	color: #fff;
+	background-color: #a2d868;
+	border-color: #92c35d;
+}
 .btn-dark:not(:disabled):not(.disabled).active,
 .btn-dark:not(:disabled):not(.disabled):active,
 .show>.btn-dark.dropdown-toggle{
