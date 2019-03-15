@@ -54,3 +54,14 @@ body {
 	padding-left: 30px;
 	padding-right: 30px;
 }
+.alert{
+	font-size: 30px;
+	padding: .3rem 1.25rem;
+	border-radius: 0;
+	border: 0;
+}
+.alert-light {
+	color: #319366;
+	background-color: #fefefe;
+	border-color: #fdfdfe;
+}
