@@ -24,34 +24,6 @@ $(function () {
         });
     };
 
-    jQuery.fn.lightTabs = function(options){
-
-        var createTabs = function(){
-            tabs = this;
-            i = 0;
-
-            showPage = function(i){
-                $(tabs).find(".tab").hide();
-                $(tabs).find(".tab").eq(i).show();
-                $(tabs).find(".table__tab").removeClass("active");
-                $(tabs).find(".table__tab").eq(i).addClass("active");
-            }
-
-            showPage(0);
-
-            $(tabs).find(".table__tab").each(function(index, element){
-                $(element).attr("data-page", i);
-                i++;
-            });
-
-            $(tabs).find(".table__tab").click(function(){
-                showPage(parseInt($(this).attr("data-page")));
-            });
-        };
-        return this.each(createTabs);
-    };
-    $(".tabs").lightTabs();
-
     $('.js-tournament').on('click', function () {
        $(this).toggleClass('ok');
     });
