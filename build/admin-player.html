@@ -2,7 +2,27 @@
 <html lang="ru">
 <head>
     <title>Рейтинг игроков</title>
-    //= template/meta.html
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Twitter Card data -->
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Вторник клуб">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Вторник клуб">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/vtornik.css">
@@ -12,6 +32,7 @@
     <main class="main">
         <div class="player">
             <div class="container">
+                <a href="#" class="alert alert-light w-100 d-block text-center mb-5">Выйти из режима администратора</a>
                 <div class="player__header">
                     <a href="#" class="player__back"><img src="../img/back.png" alt=""></a>
                     <div class="d-flex align-items-center justify-content-between w-100">
@@ -22,13 +43,14 @@
                                 <a href="#list" class="btn btn-dark" aria-controls="list" role="tab" data-toggle="tab">Список</a>
                             </li>
                             <li class="ml-3">
-                                <a href="#table" class="btn btn-dark" aria-controls="table" role="tab"
-                                   data-toggle="tab">Таблица</a>
+                                <a href="#table" class="btn btn-dark" aria-controls="table" role="tab" data-toggle="tab">Таблица</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
+                <div class="text-center mb-5">
+                    <button type="button" class="btn btn-light alert-light">+ Новый игрок</button>
+                </div>
                 <!-- Содержимое вкладок -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="list">
