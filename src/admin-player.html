@@ -14,22 +14,70 @@
             <div class="container">
                 <a href="#" class="alert alert-light w-100 d-block text-center mb-5">Выйти из режима администратора</a>
                 <div class="player__header">
-                    <a href="#" class="player__back"><img src="../img/back.png" alt=""></a>
-                    <div class="d-flex align-items-center justify-content-between w-100">
-                        <h1>Игроки</h1>
-                        <!-- Навигация -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="active">
-                                <a href="#list" class="btn btn-dark" aria-controls="list" role="tab" data-toggle="tab">Список</a>
-                            </li>
-                            <li class="ml-3">
-                                <a href="#table" class="btn btn-dark" aria-controls="table" role="tab" data-toggle="tab">Таблица</a>
-                            </li>
-                        </ul>
+                    <div class=" w-100">
+                        <a href="#" class="player__back"><img src="../img/back.png" alt=""></a>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-7">
+                                <h1>Игроки</h1>
+                            </div>
+                            <div class="col-5">
+                                <!-- Навигация -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active">
+                                        <a href="#list" class="btn btn-dark" aria-controls="list" role="tab"
+                                           data-toggle="tab">Список</a>
+                                    </li>
+                                    <li class="ml-3">
+                                        <a href="#table" class="btn btn-dark" aria-controls="table" role="tab"
+                                           data-toggle="tab">Таблица</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="text-center mb-5">
-                    <button type="button" class="btn btn-light alert-light">+ Новый игрок</button>
+                    <button type="button" class="btn btn-light alert-light" data-toggle="modal" data-target="#myModal">+
+                        Новый игрок
+                    </button>
+                    <!-- Добавить нового игрока -->
+                    <div class="modal modal-add fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name">Введите имя игрока</label>
+                                            <input type="text" class="form-control" id="name"
+                                                   placeholder="Владлен">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="anons">Описание игрока</label>
+                                            <input type="password" class="form-control" id="anons">
+                                        </div>
+                                        <div class="form-group d-flex align-items-end justify-content-center">
+                                            <div class=" mr-5">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="img/win-green.png" alt=""> <span class="player__num green">3</span>
+                                                </div>
+                                                <div class="player__name">Побед</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="img/games-green.png" alt=""> <span class="player__num green">5</span>
+                                                </div>
+                                                <div class="player__name">Игр</div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-dark w-100">Добавить</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Содержимое вкладок -->
                 <div class="tab-content">
@@ -186,128 +234,6 @@
                     </div>
                 </div>
 
-            </div>
-
-
-            <!-- Добавить фото -->
-            <div class="modal photo fade" id="photo" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <form class="rating-all__form" action="">
-                                <button type="submit" class="rating-all__button">
-                                    <div class="img"><img src="img/gallery.png" alt=""></div>
-                                    Загрузить из галереи
-                                </button>
-                                <button type="button" class="rating-all__button">
-                                    <div class="img"><img src="img/photo-black.png" alt=""></div>
-                                    Сделать фото
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Удалить турнир -->
-            <div class="modal fade" id="deleteTournament" tabindex="-1" role="dialog"
-                 aria-labelledby="deleteTournamentLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="deleteTournamentLabel">Вы уверены,<br> что хотите удалить
-                                турнир?</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="rating-all__form" action="">
-                                <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal"
-                                        aria-label="Close">Нет
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Удалить игрока -->
-            <div class="modal fade" id="deletePlay-1" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="deletePlayLabel">Вы уверены,<br> что хотите удалить игрока?</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="rating-all__form" action="">
-                                <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal"
-                                        aria-label="Close">Нет
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Удалить игрока -->
-            <div class="modal fade" id="deletePlay-2" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="deletePlayLabel">Вы уверены,<br> что хотите удалить игрока?</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="rating-all__form" action="">
-                                <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal"
-                                        aria-label="Close">Нет
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Удалить игрока -->
-            <div class="modal fade" id="deletePlay-3" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="deletePlayLabel">Вы уверены,<br> что хотите удалить игрока?</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="rating-all__form" action="">
-                                <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal"
-                                        aria-label="Close">Нет
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Удалить игрока -->
-            <div class="modal fade" id="deletePlay-4" tabindex="-1" role="dialog" aria-labelledby="deletePlayLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="deletePlayLabel">Вы уверены,<br> что хотите удалить игрока?</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="rating-all__form" action="">
-                                <button type="submit" class="rating-all__button">Да</button>
-                                <button type="button" class="rating-all__button" data-dismiss="modal"
-                                        aria-label="Close">Нет
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </main>

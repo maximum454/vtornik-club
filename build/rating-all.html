@@ -146,7 +146,47 @@
                     </tr>
                     </tbody>
                 </table>
-                <a href="#" class="btn btn-dark">+ Новый игрок</a>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">+
+                    Новый игрок
+                </button>
+                <!-- Добавить нового игрока -->
+                <div class="modal modal-add fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Введите имя игрока</label>
+                                        <input type="text" class="form-control" id="name"
+                                               placeholder="Владлен">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="anons">Описание игрока</label>
+                                        <input type="password" class="form-control" id="anons">
+                                    </div>
+                                    <div class="form-group d-flex align-items-end justify-content-center">
+                                        <div class=" mr-5">
+                                            <div class="d-flex align-items-center">
+                                                <img src="img/win-green.png" alt=""> <span class="player__num green">3</span>
+                                            </div>
+                                            <div class="player__name">Побед</div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-center">
+                                                <img src="img/games-green.png" alt=""> <span class="player__num green">5</span>
+                                            </div>
+                                            <div class="player__name">Игр</div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-dark w-100">Добавить</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
