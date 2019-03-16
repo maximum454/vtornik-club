@@ -42,7 +42,9 @@
 		align-items: center;
 	}
 	&__num{
+		width: 56px;
 		margin-left: 10px;
+		border: 0;
 		font-size: 48px;
 		&.green{
 			color: #86bf49;
