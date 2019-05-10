@@ -51,4 +51,14 @@
 
 		}
 	}
+	@include r(360){
+		&__title{
+			color: #fff;
+			font-size: 22px;
+			font-weight: 900;
+			text-align: center;
+			margin-bottom: 40px;
+			position: relative;
+		}
+	}
 }

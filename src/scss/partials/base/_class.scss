@@ -12,6 +12,7 @@ body {
 		background-image: url("../img/body-background.png");
 		width: 114px;
 		height: 100%;
+		pointer-events: none;
 	}
 	&:after{
 		content: '';
@@ -21,6 +22,7 @@ body {
 		background-image: url("../img/body-background.png");
 		width: 114px;
 		height: 100%;
+		pointer-events: none;
 	}
 }
 .hidden{
@@ -69,4 +71,12 @@ body {
 	color: #319366;
 	background-color: #fefefe;
 	border-color: #fdfdfe;
+}
+@include r(360){
+	.alert{
+		font-size: 16px;
+		padding: .3rem 1.25rem;
+		border-radius: 0;
+		border: 0;
+	}
 }

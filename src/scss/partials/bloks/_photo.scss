@@ -6,6 +6,9 @@
 		font-size: 48px;
 		margin: 0;
 	}
+	img{
+		max-width: 100%;
+	}
 	&__header{
 		position: relative;
 		color: #fff;
@@ -31,6 +34,7 @@
 		max-width: 510px;
 		margin: 0 auto;
 		padding: 50px 0 140px;
+
 	}
 	&__footer{
 		width: 100%;
@@ -42,5 +46,39 @@
 	.btn{
 		font-size: 36px;
 		font-weight: bold;
+	}
+	@include r(360){
+		h1{
+			font-size: 22px;
+			padding: 0 44px;
+		}
+		&__icon{
+			width: 23px;
+			left: 0;
+		}
+		&__control{
+			right: 0;
+
+		}
+		&__close{
+			width: 23px;
+			display: inline-block;
+		}
+		&__edit{
+			width: 23px;
+			display: inline-block;
+		}
+		&__main{
+			width: 100%;
+			max-width: 510px;
+			margin: 0 auto;
+			padding: 0;
+
+		}
+		.btn{
+			font-size: 16px;
+			font-weight: bold;
+			padding: 1.4rem 1.8rem;
+		}
 	}
 }
