@@ -2,4 +2,10 @@
 	background-color: #e8e8e9;
 	padding: 74px 15px 122px;
 	text-align: center;
+	@include r(480){
+		padding: 50px;
+		img{
+			max-width: 50%;
+		}
+	}
 }

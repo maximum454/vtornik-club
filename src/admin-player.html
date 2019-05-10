@@ -14,21 +14,71 @@
             <div class="container">
                 <a href="#" class="alert alert-light w-100 d-block text-center mb-5">Выйти из режима администратора</a>
                 <div class="player__header">
+                    <a href="#" class="player__back"><img src="../img/back.png" alt=""></a>
                     <div class=" w-100">
-                        <a href="#" class="player__back"><img src="../img/back.png" alt=""></a>
                         <div class="row justify-content-between align-items-center">
-                            <div class="col-7">
-                                <h1>Игроки</h1>
+                            <div class="col-8">
+                                <h1>Игроки
+                                    <div class="player__add" data-toggle="modal"
+                                         data-target="#myModal"></div>
+                                    <button type="button" class="btn btn-light alert-light sm-hidden" data-toggle="modal"
+                                            data-target="#myModal">+
+                                        Новый игрок
+                                    </button>
+                                    <!-- Добавить нового игрока -->
+                                    <div class="modal modal-add fade" id="myModal" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModalLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="name">Введите имя игрока</label>
+                                                            <input type="text" class="form-control" id="name"
+                                                                   placeholder="Владлен">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="anons">Описание игрока</label>
+                                                            <input type="password" class="form-control" id="anons">
+                                                        </div>
+                                                        <div class="form-group d-flex align-items-end justify-content-center">
+                                                            <div class=" mr-5">
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="img/win-green.png" alt=""> <input
+                                                                        type="text" class="player__num green" value="3">
+                                                                </div>
+                                                                <div class="player__name">Побед</div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="img/games-green.png" alt=""> <input
+                                                                        type="text" class="player__num green" value="5">
+                                                                </div>
+                                                                <div class="player__name">Игр</div>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-dark w-100">Добавить
+                                                        </button>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h1>
                             </div>
-                            <div class="col-5">
+                            <div class="col-4">
                                 <!-- Навигация -->
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="active">
-                                        <a href="#list" class="btn btn-dark" aria-controls="list" role="tab"
+                                        <a href="#list" class="btn btn-dark btn-list" aria-controls="list" role="tab"
                                            data-toggle="tab">Список</a>
                                     </li>
                                     <li class="ml-3">
-                                        <a href="#table" class="btn btn-dark" aria-controls="table" role="tab"
+                                        <a href="#table" class="btn btn-dark btn-table" aria-controls="table" role="tab"
                                            data-toggle="tab">Таблица</a>
                                     </li>
                                 </ul>
@@ -36,165 +86,87 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center mb-5">
-                    <button type="button" class="btn btn-light alert-light" data-toggle="modal" data-target="#myModal">+
-                        Новый игрок
-                    </button>
-                    <!-- Добавить нового игрока -->
-                    <div class="modal modal-add fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="name">Введите имя игрока</label>
-                                            <input type="text" class="form-control" id="name"
-                                                   placeholder="Владлен">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="anons">Описание игрока</label>
-                                            <input type="password" class="form-control" id="anons">
-                                        </div>
-                                        <div class="form-group d-flex align-items-end justify-content-center">
-                                            <div class=" mr-5">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="img/win-green.png" alt=""> <input type="text" class="player__num green" value="3">
-                                                </div>
-                                                <div class="player__name">Побед</div>
-                                            </div>
-                                            <div>
-                                                <div class="d-flex align-items-center">
-                                                    <img src="img/games-green.png" alt=""> <input type="text" class="player__num green" value="5">
-                                                </div>
-                                                <div class="player__name">Игр</div>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-dark w-100">Добавить</button>
-                                    </form>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Содержимое вкладок -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="list">
-                        <div class="row">
-                            <div class="d-flex mb-5 col-12">
-                                <div class="player__img">
-                                    <img src="img/player-no.png" alt="">
-                                </div>
-                                <div class="player__txt">
-                                    <h3>Бахтияр</h3>
-                                    <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
-                                        оценить
-                                        значение модели развития. Значимость этих проблем</p>
-                                    <div class="player__itog">
-                                        <div class="d-flex align-items-center mr-5">
-                                            <img src="img/win.png" alt=""> <span class="player__num">3</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/games.png" alt=""> <span class="player__num">5</span>
-                                        </div>
-                                    </div>
+                        <div class="player__item">
+                            <div class="player__img">
+                                <img src="img/player-no.png" alt="">
+                            </div>
+                            <div class="player__txt">
+                                <div class="player__close"></div>
+                                <h3>Бахтияр</h3>
+                                <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
+                                    оценить
+                                    значение модели развития. Значимость этих проблем</p>
+                                <div class="player__itog">
+                                    <div class="player__win">3</div>
+                                    <div class="player__games">5</div>
                                 </div>
                             </div>
-                            <div class="d-flex mb-5 col-12">
-                                <div class="player__img">
-                                    <img src="img/player-no.png" alt="">
-                                </div>
-                                <div class="player__txt">
-                                    <h3>Бахтияр</h3>
-                                    <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
-                                        оценить
-                                        значение модели развития. Значимость этих проблем</p>
-                                    <div class="player__itog">
-                                        <div class="d-flex align-items-center mr-5">
-                                            <img src="img/win.png" alt=""> <span class="player__num">3</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/games.png" alt=""> <span class="player__num">5</span>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="player__item">
+                            <div class="player__img">
+                                <img src="img/player-no.png" alt="">
+                            </div>
+                            <div class="player__txt">
+                                <div class="player__close"></div>
+                                <h3>Бахтияр</h3>
+                                <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
+                                    оценить
+                                    значение модели развития. Значимость этих проблем</p>
+                                <div class="player__itog">
+                                    <div class="player__win">3</div>
+                                    <div class="player__games">5</div>
                                 </div>
                             </div>
-                            <div class="d-flex mb-5 col-12">
-                                <div class="player__img">
-                                    <img src="img/player-no.png" alt="">
-                                </div>
-                                <div class="player__txt">
-                                    <h3>Бахтияр</h3>
-                                    <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
-                                        оценить
-                                        значение модели развития. Значимость этих проблем</p>
-                                    <div class="player__itog">
-                                        <div class="d-flex align-items-center mr-5">
-                                            <img src="img/win.png" alt=""> <span class="player__num">3</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/games.png" alt=""> <span class="player__num">5</span>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="player__item">
+                            <div class="player__img">
+                                <img src="img/player-no.png" alt="">
+                            </div>
+                            <div class="player__txt">
+                                <div class="player__close"></div>
+                                <h3>Бахтияр</h3>
+                                <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
+                                    оценить
+                                    значение модели развития. Значимость этих проблем</p>
+                                <div class="player__itog">
+                                    <div class="player__win">3</div>
+                                    <div class="player__games">5</div>
                                 </div>
                             </div>
-                            <div class="d-flex mb-5 col-12">
-                                <div class="player__img">
-                                    <img src="img/player-no.png" alt="">
-                                </div>
-                                <div class="player__txt">
-                                    <h3>Бахтияр</h3>
-                                    <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
-                                        оценить
-                                        значение модели развития. Значимость этих проблем</p>
-                                    <div class="player__itog">
-                                        <div class="d-flex align-items-center mr-5">
-                                            <img src="img/win.png" alt=""> <span class="player__num">3</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/games.png" alt=""> <span class="player__num">5</span>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="player__item">
+                            <div class="player__img">
+                                <img src="img/player-no.png" alt="">
+                            </div>
+                            <div class="player__txt">
+                                <div class="player__close"></div>
+                                <h3>Бахтияр</h3>
+                                <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
+                                    оценить
+                                    значение модели развития. Значимость этих проблем</p>
+                                <div class="player__itog">
+                                    <div class="player__win">3</div>
+                                    <div class="player__games">5</div>
                                 </div>
                             </div>
-                            <div class="d-flex mb-5 col-12">
-                                <div class="player__img">
-                                    <img src="img/player-no.png" alt="">
-                                </div>
-                                <div class="player__txt">
-                                    <h3>Бахтияр</h3>
-                                    <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
-                                        оценить
-                                        значение модели развития. Значимость этих проблем</p>
-                                    <div class="player__itog">
-                                        <div class="d-flex align-items-center mr-5">
-                                            <img src="img/win.png" alt=""> <span class="player__num">3</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/games.png" alt=""> <span class="player__num">5</span>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="player__item">
+                            <div class="player__img">
+                                <img src="img/player-no.png" alt="">
                             </div>
-                            <div class="d-flex mb-5 col-12">
-                                <div class="player__img">
-                                    <img src="img/player-no.png" alt="">
-                                </div>
-                                <div class="player__txt">
-                                    <h3>Бахтияр</h3>
-                                    <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
-                                        оценить
-                                        значение модели развития. Значимость этих проблем</p>
-                                    <div class="player__itog">
-                                        <div class="d-flex align-items-center mr-5">
-                                            <img src="img/win.png" alt=""> <span class="player__num">3</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/games.png" alt=""> <span class="player__num">5</span>
-                                        </div>
-                                    </div>
+                            <div class="player__txt">
+                                <div class="player__close"></div>
+                                <h3>Бахтияр</h3>
+                                <p>Задача организации, в особенности же рамки и место обучения кадров позволяет
+                                    оценить
+                                    значение модели развития. Значимость этих проблем</p>
+                                <div class="player__itog">
+                                    <div class="player__win">3</div>
+                                    <div class="player__games">5</div>
                                 </div>
                             </div>
                         </div>

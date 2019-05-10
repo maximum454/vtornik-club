@@ -26,7 +26,7 @@
 		top: 50%;
 		transform: translate(0,-50%);
 	}
-	@include r(360){
+	@include r(480){
 		&__list{
 			a{
 				text-align: left;

@@ -27,4 +27,18 @@
 		border: 1px solid rgba(#fff,.1);
 		border-bottom: 2px solid #fff;
 	}
+	@include r(480){
+		thead{
+			th{
+				font-size: 22px;
+				padding: 15px;
+			}
+		}
+		tbody{
+			td{
+				font-size: 18px;
+				padding: 15px;
+			}
+		}
+	}
 }

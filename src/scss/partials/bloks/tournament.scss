@@ -25,6 +25,7 @@
 			transform: translate(0,-50%);
 			background-image: url("../img/new-tournament__icon.png");
 			background-repeat: no-repeat;
+			background-size: 100%;
 			width: 32px;
 			height: 32px;
 		}
@@ -70,6 +71,7 @@
 				transform: translate(0,-50%);
 				background-image: url("../img/new-tournament__icon.png");
 				background-repeat: no-repeat;
+				background-size: 100%;
 				width: 32px;
 				height: 32px;
 			}
@@ -82,6 +84,7 @@
 					transform: translate(0,-50%);
 					background-image: url("../img/ok.png");
 					background-repeat: no-repeat;
+					background-size: 100%;
 					width: 38px;
 					height: 27px;
 				}
@@ -154,6 +157,50 @@
 		}
 		.modal-title{
 			font-weight: bold;
+		}
+	}
+	@include r(480){
+		&__list{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li{
+				border-radius: 15px;
+				height: 48px;
+				margin-bottom: 20px;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 48px;
+			}
+			a{
+				position: relative;
+				display: block;
+				padding: 0 30px;
+				width: 100%;
+				height: 100%;
+				color: #000;
+				text-decoration: none;
+				&:after{
+					width: 20px;
+					height: 20px;
+				}
+				&.ok{
+					&:after{
+						width: 20px;
+						height: 15px;
+					}
+				}
+			}
+		}
+		&__btn{
+			border-radius: 15px;
+			min-height: 48px;
+			margin-bottom: 20px;
+			font-size: 16px;
+			&:after{
+				width: 20px;
+				height: 20px;
+			}
 		}
 	}
 }

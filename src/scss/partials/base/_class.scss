@@ -72,7 +72,7 @@ body {
 	background-color: #fefefe;
 	border-color: #fdfdfe;
 }
-@include r(360){
+@include r(480){
 	.alert{
 		font-size: 16px;
 		padding: .3rem 1.25rem;
