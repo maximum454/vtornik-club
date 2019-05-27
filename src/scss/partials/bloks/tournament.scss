@@ -130,6 +130,10 @@
 			right: 33px;
 			opacity:1;
 			outline: none;
+			padding: 0;
+			width: 30px;
+			height: 30px;
+			background-size: 100%;
 			&:before{
 				content: '';
 				position: absolute;
